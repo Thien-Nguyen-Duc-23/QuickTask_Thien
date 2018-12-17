@@ -49,6 +49,10 @@
                                             <div>{{ $task->name }}</div>
                                         </td>
                                         <td>
+                                            {!! Form::open(['route' => ['getDeleteTask', $task->id], 'method' => 'POST']) !!}
+                                                {{ method_field('DELETE') }}
+                                                {!! Form::submit(trans('home.delete'), ['class' => 'btn btn-danger']) !!}
+                                            {!! Form::close() !!}
                                         </td>
                                     </tr>
                                 @endforeach

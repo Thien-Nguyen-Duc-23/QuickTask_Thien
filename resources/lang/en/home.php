@@ -10,6 +10,7 @@ return [
     'add' => 'Add',
     'error'=>'Whoops! Something went wrong!',
     'message'=>'Success !! Complete add name',
+    'messageDelete'=>'Success !! Complete delete task name',
     'requie'=>'Please enter name',
     'max'=>'This name max 255',
     'lang' => [
