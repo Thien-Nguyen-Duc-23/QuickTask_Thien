@@ -8,6 +8,10 @@ return [
     'task_list'=>'Task List',
     'delete' => 'Delete',
     'add' => 'Add',
+    'error'=>'Whoops! Something went wrong!',
+    'message'=>'Success !! Complete add name',
+    'requie'=>'Please enter name',
+    'max'=>'This name max 255',
     'lang' => [
         'en' => 'English',
         'vi' => 'Tiếng Việt',

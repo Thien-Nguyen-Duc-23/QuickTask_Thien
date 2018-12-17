@@ -17,5 +17,10 @@ Route::get('/', function () {
 
 Route::get('index',[
     'as'=>'getIndex',
-    'uses'=>'QuickTask@getIndex'
+    'uses'=>'QuickTasks@getIndex'
+]);
+
+Route::post('addTask',[
+    'as'=>'postTask',
+    'uses'=>'QuickTasks@postTask'
 ]);
