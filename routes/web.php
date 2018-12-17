@@ -24,3 +24,8 @@ Route::post('addTask',[
     'as'=>'postTask',
     'uses'=>'QuickTasks@postTask'
 ]);
+
+Route::delete('deleteTask/{id}',[
+    'as'=>'getDeleteTask',
+    'uses'=>'QuickTasks@getDeleteTask'
+]);
