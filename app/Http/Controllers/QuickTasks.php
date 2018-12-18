@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Session;
 
 class QuickTasks extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function getIndex(){
     	$listTask = Task::orderBy('created_at', 'asc')->get();
     	return view('tasks',compact('listTask'));
