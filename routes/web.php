@@ -29,3 +29,7 @@ Route::delete('deleteTask/{id}',[
     'as'=>'getDeleteTask',
     'uses'=>'QuickTasks@getDeleteTask'
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
